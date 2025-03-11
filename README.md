@@ -26,4 +26,4 @@ This project represents the evolution of our slider work—from the original [Si
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/modern-animation-slider.git
+   git clone https://github.com/Sabirhussainbalal/modern-animation-slider.git
