@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Modern Slider</title>
+    <style>
+      * {
+        overflow: hidden;
+      }
+
+      .active {
+        width: 100vw !important;
+        height: 100vh !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0) !important;
+        margin: 0;
+        transition: all 1s ease-in-out;
+        z-index: -1;
+        border-radius: none !important;
+      }
+    </style>
+  </head>
+  <body class="overflow-hidden transition-all duration-1000 ease-in-out">
+    <span
+      class="line h-[2px] bg-red-500 w-0 opacity-0 fixed z-[100] top-0 transition-all duration-1000 ease-in-out"
+    ></span>
+    <div
+      class="fixed top-0 left-0 bg-[url(/assets/1.jpg)] body object-cover no-repeat w-full h-full z-[-1] blur-[30px] transition-all duration-500 ease-in-out"
+    ></div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out transition-all duration-500 active"
+    >
+      <img src="/assets/1.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show transition-all duration-500 ease-in-out top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded delay-1000 w-[80%]"
+      >
+        <p class="mb-2">
+          “Let yourself be silently drawn by the stronger pull of what you
+          really love.”
+        </p>
+        <p class="text-sm mb-1">– Rumi</p>
+        <p class="text-sm">
+          When you follow your inner passion, you unlock a reservoir of
+          creativity and purpose. Your heart leads you toward fulfillment and
+          authenticity. Embrace the call that resonates deep within, and let it
+          guide your every step.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out transition-all duration-500"
+    >
+      <img src="/assets/2.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “The only limit to our realization of tomorrow is our doubts of
+          today.”
+        </p>
+        <p class="text-sm mb-1">– Franklin D. Roosevelt</p>
+        <p class="text-sm">
+          Cast aside the shackles of self-doubt and envision a future filled
+          with potential. Every great achievement begins with the belief that
+          the impossible can be made possible. Step boldly forward and transform
+          your doubts into determination.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/3.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “Innovation distinguishes between a leader and a follower.”
+        </p>
+        <p class="text-sm mb-1">– Steve Jobs</p>
+        <p class="text-sm">
+          Dare to innovate and challenge the status quo. True leadership is
+          defined by the courage to break away from the familiar and create
+          something extraordinary. Embrace creativity as your compass and let it
+          set you apart.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/4.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">“Do not wait; the time will never be just right.”</p>
+        <p class="text-sm mb-1">– Napoleon Hill</p>
+        <p class="text-sm">
+          Seize the moment and act with purpose, for the perfect time is always
+          now. Every second is an opportunity to make progress toward your
+          dreams. Commit to your goals and let your actions pave the way for
+          success.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/5.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “The best way to predict the future is to create it.”
+        </p>
+        <p class="text-sm mb-1">– Peter Drucker</p>
+        <p class="text-sm">
+          Take charge of your destiny by building the future you envision. Every
+          innovative idea and determined effort contributes to shaping tomorrow.
+          Forge your path with courage and purpose, and watch your dreams
+          unfold.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/6.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “Your time is limited, don't waste it living someone else's life.”
+        </p>
+        <p class="text-sm mb-1">– Steve Jobs</p>
+        <p class="text-sm">
+          Embrace your individuality and chart your own course. Life is too
+          precious to be spent following a path that isn’t truly yours. Trust in
+          your unique vision, and let your authenticity shine through every
+          endeavor.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/7.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">“The secret of getting ahead is getting started.”</p>
+        <p class="text-sm mb-1">– Mark Twain</p>
+        <p class="text-sm">
+          Every journey begins with a single step. Break through inertia by
+          taking action today. With determination and perseverance, even the
+          smallest start can lead to remarkable achievements.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/8.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “Don't watch the clock; do what it does. Keep going.”
+        </p>
+        <p class="text-sm mb-1">– Sam Levenson</p>
+        <p class="text-sm">
+          Let time serve as a silent motivator as you focus on progress.
+          Persistence and continuous effort are the keys to overcoming
+          obstacles. Keep moving forward, and success will follow naturally.
+        </p>
+      </div>
+    </div>
+    <div
+      class="slide bg-black w-[110px] h-[180px] absolute bottom-0 m-2 rounded-2xl overflow-hidden transition-all duration-1000 ease-in-out"
+    >
+      <img src="/assets/9.jpg" alt="" class="w-[100%] h-[100%] object-cover" />
+      <div
+        class="absolute show opacity-0 transition-all duration-500 ease-in-out delay-1000 translate-y-[50px] top-10 left-4 text-white text-lg font-semibold drop-shadow-md bg-black/50 px-3 py-1 rounded w-[80%]"
+      >
+        <p class="mb-2">
+          “Success is not the key to happiness. Happiness is the key to
+          success.”
+        </p>
+        <p class="text-sm mb-1">– Albert Schweitzer</p>
+        <p class="text-sm">
+          Cultivate joy and fulfillment in your daily life to unlock true
+          success. When you prioritize happiness, every challenge becomes an
+          opportunity for growth. Embrace positivity, and let it guide you
+          toward a prosperous future.
+        </p>
+      </div>
+    </div>
+    <!-- left -->
+    <button
+      class="left bg-gray-600 text-white w-[50px] h-[50px] absolute top-[50%] cursor-pointer rounded-full flex justify-center items-center group hover:bg-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="30px"
+        fill="#CCCCCC"
+      >
+        <path
+          class="group-hover:fill-white"
+          d="M560-280 360-480l200-200v400Z"
+        />
+      </svg>
+    </button>
+    <!-- Right -->
+    <button
+      class="right bg-gray-600 text-white w-[50px] h-[50px] absolute right-0 top-[50%] cursor-pointer rounded-full flex justify-center items-center group hover:bg-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="30px"
+        fill="#CCCCCC"
+      >
+        <path
+          class="group-hover:fill-white"
+          d="M400-280v-400l200 200-200 200Z"
+        />
+      </svg>
+    </button>
+    <script>
+      count = 0;
+      const slides = document.querySelectorAll(".slide");
+      const left = document.querySelector(".left");
+      const body = document.querySelector(".body");
+      const right = document.querySelector(".right");
+      let isAnimating = false;
+      const line = document.querySelector(".line");
+      let len = slides.length;
+      let currentSlide = 0;
+      let percen = 5;
+
+      slides.forEach((slide) => {
+        slide.style.left = `${percen * 120}px`;
+        percen++;
+      });
+
+      function animateLine(direction) {
+        if (isAnimating) return; // Prevent triggering during animation
+        isAnimating = true;
+
+        // Reset the line's state
+        line.classList.add("opacity-0");
+        // If the line already has the expanded width, revert it back to 0
+        if (line.classList.contains("w-[100vw]")) {
+          line.classList.replace("w-[100vw]", "w-0");
+        }
+        // Remove any previously added positioning/origin classes
+        line.classList.remove(
+          "left-0",
+          "right-0",
+          "origin-left",
+          "origin-right"
+        );
+
+        // Set the position and transform origin based on the clicked direction
+        if (direction === "left") {
+          line.classList.add("left-0", "origin-left");
+        } else if (direction === "right") {
+          line.classList.add("right-0", "origin-right");
+        }
+
+        // Force reflow to apply the reset (ensures the browser picks up the starting state)
+        void line.offsetWidth;
+
+        // Start the animation after a slight delay
+        setTimeout(() => {
+          line.classList.remove("opacity-0");
+          // Animate the width from 0 to 100vw
+          line.classList.replace("w-0", "w-[100vw]");
+        }, 50);
+
+        // After the animation, hide the line and reset for the next click
+        setTimeout(() => {
+          line.classList.add("opacity-0");
+          setTimeout(() => {
+            line.classList.replace("w-[100vw]", "w-0");
+            isAnimating = false; // Re-enable button triggers
+          }, 300); // extra delay to ensure the opacity transition completes
+        }, 1050); // 1050ms = transition duration (1000ms) + buffer
+      }
+
+      const animation = async () => {
+        slides.forEach((slide, index) => {
+          if (index === count) {
+            body.style.backgroundImage = `url(${
+              slide.querySelector("img").src
+            })`;
+            slide.classList.add("active");
+            slide.querySelector(".show").classList.remove("opacity-0");
+            slide.querySelector(".show").classList.remove("translate-y-[50px]");
+          } else {
+            slide.classList.remove("active");
+            slide.querySelector(".show").classList.add("opacity-0");
+            slide.querySelector(".show").classList.add("translate-y-[50px]");
+          }
+          slide.style.transform = `translateX(-${count * 100}%)`;
+        });
+      };
+
+      left.addEventListener("click", () => {
+        animateLine("left");
+        if (count === 0) {
+          count = len - 1;
+        } else {
+          count--;
+        }
+        animation();
+      });
+
+      right.addEventListener("click", () => {
+        animateLine("right");
+        if (count === len - 1) {
+          count = 0;
+        } else {
+          count++;
+        }
+        animation();
+      });
+    </script>
+  </body>
+</html>
